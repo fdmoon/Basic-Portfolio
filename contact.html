@@ -5,38 +5,60 @@
 	<meta charset="UTF-8">
 	<title>Moon&apos;s Basic Portfolio</title>
 	<link rel="icon" sizes="32x32" href="./images/fdmoon_icon.png">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="./css/reset.css"> -->
 </head>
 
 <body>
 	<header>
-		<h1>Felix Moon</h1>
+		<div class="namearea">
+			<h1 id="topname">Felix Moon</h1>
+		</div>
 	</header>
 
-	<div class="contentarea">
+	<div class="contentarea clearfix">
 		<section class="mainsecarea">
 			<h2>Contact</h2>
-			<hr>		
+			<hr id="hrtop">
+
 			<form>
 				<div>
-					<h4>Name</h4>
-					<input type="text" name="name" placeholder="John Smith" value="">
-					<h4>Email</h4>
-					<input type="email" name="email" placeholder="example@gmail.com" value="">
-					<h4>Message</h4>
-					<textarea name="msg" rows="5" style="width:200px; height:100px;"></textarea>
+					<p class="intitle">Name</p>
+					<input class="inbox" type="text" name="name" placeholder="John Smith" value="">
+					<p class="intitle">Email</p>
+					<input class="inbox" type="email" name="email" placeholder="example@gmail.com" value="">
+					<p class="intitle">Message</p>
+					<textarea class="inbox" name="msg" rows="5" maxlength="400"></textarea>
 				</div>
 				<br>
-				<input class="buttons" type="submit" value="Submit">
+				<input id="subbtn" type="submit" value="Submit">
 			</form>
 		</section>
 
 		<section class="sidebar">
+			<h3>Connect with Me</h3>
+			<hr>
+
+			<div>
+				<a href="https://github.com/fdmoon/Basic-Portfolio" target="_blank">
+					<img class="iconimg" src="images/github_icon.png" >
+				</a>
+				<a href="https://www.linkedin.com/in/felix-daekeun-moon/" target="_blank">
+					<img class="iconimg" src="images/linkedin_icon.png" >
+				</a>
+				<a href="https://stackoverflow.com/" target="_blank">
+					<img class="iconimg" src="images/stackoverflow_icon.png" >
+				</a>
+				
+			</div>
 			
 		</section>
-		
+
 	</div>
+
+	<footer>
+		<p>&copy;Copyright 2017 Felix Moon</p>
+	</footer>
 </body>
 
 </html>
