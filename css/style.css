@@ -77,15 +77,35 @@ ul {
 	font-size: 0.9em;
 }
 
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;    
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding: 0 20px;
+    margin: 20px 0;
+}	
+
 .namearea {
 	width: 960px;
 	margin: 0 auto;
 }
 
-#topname {
-	padding: 10px;
+.topname {
+	float: left;
+	padding: 20px 0;
 	margin: 0;
-	width: 220px;
+	width: 200px;
+}
+
+.navitems {
+	float: right;
 }
 
 #hrtop {
@@ -132,6 +152,48 @@ ul {
 	margin-right: 30px;
 }
 
+.pfgrp {
+	position: relative;
+	margin: 30px 70px;
+}
+
+.pfimgleft, .pfimgright {
+	width: 200px;
+	height: 150px;
+	z-index: 1;
+}
+
+.pfimgleft {
+	float: left;
+}
+
+.pfimgright {
+	float: right;
+}
+
+.pfbtnleft, .pfbtnright {
+	width: 200px;
+	height: 30px;
+	color: white;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	padding: 5px 0;
+	z-index: 2;
+}
+
+.pfbtnleft {
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+}
+
+.pfbtnright {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+
 .intitle {
 	margin-top: 20px;
 }
@@ -144,6 +206,18 @@ ul {
 #subbtn {
 	color: white;
 	background-color: #4aaaa5;
-	padding: 5px 10px;
+	padding: 10px 20px;
+}
+
+.inbox:focus {
+	background-color: #ffee88;
+}
+
+a:hover {
+	color: #ff0000;
+}
+
+a:visited {
+	color: #777777;
 }
 
