@@ -90,7 +90,12 @@ nav ul li {
     border-left: 1px solid;
     padding: 0 20px;
     margin: 20px 0;
-}	
+}
+
+nav a {
+	text-decoration:  none;
+	color: #777777;
+}
 
 .namearea {
 	width: 960px;
@@ -214,7 +219,7 @@ nav ul li {
 }
 
 a:hover {
-	color: #ff0000;
+	color: #4aaaa5;
 }
 
 a:visited {
