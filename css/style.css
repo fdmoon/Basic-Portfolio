@@ -21,6 +21,8 @@ header {
 }
 
 footer {
+	/*position: fixed;*/
+	bottom: 0;
 	color: #cccccc;
 	background-color: #666666;
 	border-top: 5px solid;
@@ -29,7 +31,7 @@ footer {
     width: 100%;
 	text-align: center;
 	font-size: x-small;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 h1, h2, h3 {
@@ -95,6 +97,10 @@ nav ul li {
 nav a {
 	text-decoration:  none;
 	color: #777777;
+}
+
+.content {
+	min-height: calc(100vh - 70px);		/* 70px is height of footer */
 }
 
 .namearea {
